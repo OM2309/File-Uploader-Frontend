@@ -1,8 +1,19 @@
-# React + Vite
+# File Uploader Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the File Uploader project! This project provides a simple and efficient solution for uploading files securely.
 
-Currently, two official plugins are available:
+Features
+User-friendly Interface: Utilizing React and Tailwind CSS, the frontend offers an intuitive and responsive user experience.
+Secure File Uploads: The backend, built with Express.js and Node.js, ensures secure file uploads.
+Database Integration: Prisma ORM is used for database operations, with a PostgreSQL database chosen for its compatibility in live environments.
+Admin Panel: Access the admin panel to manage users and files with ease.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone the frontend repository:
+git clone https://github.com/OM2309/File-Uploader-Frontend.git
+
+# Install dependencies:
+cd File-Uploader-Frontend
+npm install
+
+# Start the development server:
+npm run dev
