@@ -15,5 +15,9 @@ git clone https://github.com/OM2309/File-Uploader-Frontend.git
 cd File-Uploader-Frontend
 npm install
 
+# Set up the environment variables:
+Create a .env file based on the .env.example template.
+Provide appropriate values for the environment variables.
+
 # Start the development server:
 npm run dev
