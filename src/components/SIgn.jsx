@@ -3,7 +3,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 
-const Signup = ({setToken}) => {
+const Signup = ({ setToken }) => {
   const navigate = useNavigate();
   const {
     register,
@@ -15,12 +15,12 @@ const Signup = ({setToken}) => {
   const onSubmit = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/login",
+        `${process.env.BACKEND_URI}/api/login`,
         data
       );
       const token = response.data.token;
       localStorage.setItem("token", token);
-      setToken(token)
+      setToken(token);
       toast.success("Login successful!");
       reset();
       navigate("/");

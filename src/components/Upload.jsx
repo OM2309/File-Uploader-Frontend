@@ -33,7 +33,7 @@ const Upload = () => {
       }
 
       const response = await axios.post(
-        "http://localhost:4000/api/upload",
+        `${process.env.BACKEND_URI}/api/upload`,
         formData,
         {
           headers: {

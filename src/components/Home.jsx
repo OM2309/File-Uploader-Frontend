@@ -5,7 +5,7 @@ import axios from "axios";
 import { FiDownload, FiTrash } from "react-icons/fi";
 
 const Home = ({ token, setToken }) => {
-  const BACKEND_URI = "http://localhost:4000";
+  const BACKEND_URI = process.env.BACKEND_URI
   const [files, setFiles] = useState([]);
   const [userRole, setUserRole] = useState();
   const navigate = useNavigate();

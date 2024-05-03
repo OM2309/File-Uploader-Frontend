@@ -16,7 +16,7 @@ const Signup = () => {
     
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/register",
+        `${process.env.BACKEND_URI}/api/register`,
         data
       );
       console.log(response.data);
